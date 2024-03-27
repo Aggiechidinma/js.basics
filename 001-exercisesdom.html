@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <button class="js-ninea">9a</button>
+    <button class="js-nineb">9b</button>
+    <button onclick="imadeClick()" class="js-buttonone"`>
+    Heads</button>
+    <button onclick="youMadeClick()" class="js-buttontwo">Tails</button>
+
+    <script>
+      
+      function imadeClick() {
+        const buttonOne = document.querySelector('.js-buttonone');
+        console.log(buttonOne);
+
+        alert(`you choose: Head`);
+      }
+
+      function youMadeClick() {
+        const buttonTwo = document.querySelector('.js-buttontwo');
+         console.log(buttonTwo);
+         
+         alert(`you choose: Tail`);
+      }
+      
+      const buttonNine = document.querySelector('.js-ninea');
+      console.log(buttonNine);
+
+      console.log(document.querySelector('.js-nineb').innerHTML);
+      document.querySelector('.js-nineb')
+      .innerHTML = 'Gifted'
+      
+    </script>
+  </body>
+</html>
